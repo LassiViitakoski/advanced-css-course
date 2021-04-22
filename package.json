@@ -4,8 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "compile:sass": "node-sass ./public/sass/exercise1/main.scss ./public/css/exercise1/styles.css"
+    "compile:sass": "node-sass ./public/exercise1/sass/main.scss ./public/exercise1/css/styles.css -w"
   },
   "repository": {
     "type": "git",
@@ -17,12 +16,8 @@
     "url": "https://github.com/LassiViitakoski/advanced-css-course/issues"
   },
   "homepage": "https://github.com/LassiViitakoski/advanced-css-course#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "path": "^0.12.7"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "node-sass": "^5.0.0",
-    "nodemon": "^2.0.7"
+    "node-sass": "^5.0.0"
   }
 }
