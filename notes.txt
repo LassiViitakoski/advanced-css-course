@@ -1,0 +1,40 @@
+Video jossa kesken : 
+	- 28. NPM Scripts: Let's Write and Compile Sass Locally -> kohdassa 05.05'
+
+
+
+em ja rem perustuvat fonttikokoon.
+em (font) vertautuu parent-elementin fonttikokoon, jos parent element font-size = 16px ja laitetaan headeriin font-size: 3em => headerin font-size = 48px.
+em (length)(padding, margins yms.) vertautuu nykyisen elementin fonttikokoon, jos headerin font-size = 48px ja laitetaan headeriin padding: 2em; => headerin padding = 96px.
+rem vertautuu rootin fonttikokoon!
+
+vh = viewport height, 10vh = 10% näytön korkeudesta.
+vw = viewport width, 10vh = 10% näytön leveydestä.
+
+%(font) vertautuvat parent-elementin fonttikokoon.
+%(length) vertautuvat parent-elementin widthiin.
+
+periytyvät elementit käyttävät parent-elementissä määritettyä font-sizea.
+
+esim.
+
+.parent {
+	font-size: 20px;
+	line-height: 150%;
+}
+
+.child {
+	font-size: 25px;
+}
+
+=> child elementin line-height = 20px * 150% => 30px
+
+ominaisuudet, jotka liittyvät textiin => periytyvät.
+
+periytyviä ominaisuuksia : 
+	- font-size
+	- line-height
+	- font-family
+	- color
+
+Box-sizing: border-box; -> Kun määrittelee widthin ja heightin elementille -> Korkeuteen ja pituuteen tulee mukaan padding ja border.
