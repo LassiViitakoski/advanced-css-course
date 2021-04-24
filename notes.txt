@@ -1,5 +1,5 @@
 Video jossa kesken : 
-	- 28. NPM Scripts: Let's Write and Compile Sass Locally -> kohdassa 05.05'
+	- 30. Building the Features section -> kohdassa 10.00'
 
 Komento live-serverin käynnistämiseen:
 	- live-server ./public/exercise1
