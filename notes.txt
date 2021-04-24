@@ -4,6 +4,8 @@ Video jossa kesken :
 Komento live-serverin käynnistämiseen:
 	- live-server ./public/exercise1
 
+Ilmaisia hienoja kuvia -> unsplash.com
+
 em ja rem perustuvat fonttikokoon.
 em (font) vertautuu parent-elementin fonttikokoon, jos parent element font-size = 16px ja laitetaan headeriin font-size: 3em => headerin font-size = 48px.
 em (length)(padding, margins yms.) vertautuu nykyisen elementin fonttikokoon, jos headerin font-size = 48px ja laitetaan headeriin padding: 2em; => headerin padding = 96px.

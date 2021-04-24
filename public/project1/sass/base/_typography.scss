@@ -51,6 +51,7 @@ body {
         rgba($color-primary-light, .8),
         rgba($color-primary-dark, .8)
     );
+    -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     letter-spacing: .2rem;
