@@ -5,6 +5,7 @@ Komento live-serverin käynnistämiseen:
 	- live-server ./public/exercise1
 
 Ilmaisia hienoja kuvia -> unsplash.com
+Ilmaisia background-videoita -> coverr.co
 
 em ja rem perustuvat fonttikokoon.
 em (font) vertautuu parent-elementin fonttikokoon, jos parent element font-size = 16px ja laitetaan headeriin font-size: 3em => headerin font-size = 48px.
