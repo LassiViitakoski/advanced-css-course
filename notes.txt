@@ -6,6 +6,7 @@ Komento live-serverin käynnistämiseen:
 
 Ilmaisia hienoja kuvia -> unsplash.com
 Ilmaisia background-videoita -> coverr.co
+Cubic-bezier-omainaisuuksia = animaatioon itse tehtyjä ease-ominaisuuksia -> easings.net
 
 em ja rem perustuvat fonttikokoon.
 em (font) vertautuu parent-elementin fonttikokoon, jos parent element font-size = 16px ja laitetaan headeriin font-size: 3em => headerin font-size = 48px.
