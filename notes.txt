@@ -1,6 +1,10 @@
 Video jossa kesken : 
 	- 
 
+Linkit codepen-harjoitteluihin:
+	- https://codepen.io/LassiViitakoski/pen/vYgQmBj
+	- https://codepen.io/LassiViitakoski/pen/MWJNKmK
+
 Komento live-serverin käynnistämiseen:
 	- live-server ./public/exercise1
 
@@ -46,3 +50,45 @@ periytyviä ominaisuuksia :
 	- color
 
 Box-sizing: border-box; -> Kun määrittelee widthin ja heightin elementille -> Korkeuteen ja pituuteen tulee mukaan padding ja border.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Flexbox
+
+Container -> Ensimmäiset vaihtoehdot oletuksena {
+
+	flex-direcion: row | row-reverse | column | column-reverse
+
+	flex-wrap: nowrap | wrap | wrap-reverse
+		- Määrittää miten elementit flexboxin sisällä siirtyvät, jos flexboxilla ei ole riittävästi tilaa
+
+	justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly
+		- Määrittää, miten elementit sijoitetaan pääakselin (main axis) suhteen
+
+	align-items: stretch | flex-start | flex-end | center | baseline
+		- Määrittää, miten elementit sijoiteteaan läpiakselin (cross axis) suhteen
+
+	align-content: stretch | flex-start | flex-end | center | space-between | space-around
+		- Jos rivejä on monta, määrittää miten rivit sijoitetaan läpiakselin (cross axis) suhteen
+
+}
+
+Item -> Ensimmäiset vaihtoehdot oletuksena {
+
+	align-self: auto | stretch | flex-start | flex-end | center | baseline
+		- Hyvin samanlainen kuin align-items, mutta yksittäiselle elementille
+
+	order: 0 | <integer>
+		- Määrää järjestyksen yksittäisille elementeille, hyvä skaalatessa pienemmille näytöille
+
+	flex-grow: 0 | <integer> -------------------------------------> |
+		- Määritetään, kuinka paljon elementti voi kasvaa			|
+																	|
+	flex-shrink: 1 | <integer> -----------------------------------> | -->---------> flex: 0 1 auto | <int> <int> <length>
+		- Määritetään, kuinka paljon elementti voi pienentyä		|
+																	|
+	flex-basis: auto | <length> ----------------------------------> |
+		- Määritetään base-width
+
+}
+
