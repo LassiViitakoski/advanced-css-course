@@ -1,5 +1,5 @@
 Video jossa kesken : 
-	- 56. -> kohdassa 19.15'
+	- 
 
 Komento live-serverin käynnistämiseen:
 	- live-server ./public/exercise1
@@ -9,6 +9,7 @@ Ilmaisia background-videoita -> coverr.co
 Cubic-bezier-omainaisuuksia = animaatioon itse tehtyjä ease-ominaisuuksia -> easings.net
 Statistiikka, minkäkokoisia näyttöjä käytetään -> statcounter.com
 Sivusto, jossa voi testa sivuston toimivuutta erilaisilla näyttöresoluutioilla -> sizzy.co
+Sivusto, jossa voi testata tukevatko selaimet css omainaisuuksia -> caniuse.com
 
 em ja rem perustuvat fonttikokoon.
 em (font) vertautuu parent-elementin fonttikokoon, jos parent element font-size = 16px ja laitetaan headeriin font-size: 3em => headerin font-size = 48px.
