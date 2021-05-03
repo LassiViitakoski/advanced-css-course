@@ -52,6 +52,8 @@ periytyviä ominaisuuksia :
 
 Box-sizing: border-box; -> Kun määrittelee widthin ja heightin elementille -> Korkeuteen ja pituuteen tulee mukaan padding ja border.
 
+Z-index toimii vain, jos position on asetettu
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Flexbox
@@ -85,7 +87,7 @@ Item -> Ensimmäiset vaihtoehdot oletuksena {
 	flex-grow: 0 | <integer> -------------------------------------> |
 		- Määritetään, kuinka paljon elementti voi kasvaa			|
 																	|
-	flex-shrink: 1 | <integer> -----------------------------------> | -->---------> flex: 0 1 auto | <int> <int> <length>
+	flex-shrink: 1 | <integer> -----------------------------------> | -->---------> flex: 0 1 auto | <int> <int> <length>(40%)
 		- Määritetään, kuinka paljon elementti voi pienentyä		|
 																	|
 	flex-basis: auto | <length> ----------------------------------> |
