@@ -15,6 +15,7 @@ Statistiikka, minkäkokoisia näyttöjä käytetään -> statcounter.com
 Sivusto, jossa voi testa sivuston toimivuutta erilaisilla näyttöresoluutioilla -> sizzy.co
 Sivusto, jossa voi testata tukevatko selaimet css omainaisuuksia -> caniuse.com
 Sivusto svg-ikonien hakemiseen -> icomoon.io
+Sivusto, josta löytyy css-llä tehtyjä html merkkejä -> https://css-tricks.com/snippets/html/glyphs/
 
 em ja rem perustuvat fonttikokoon.
 em (font) vertautuu parent-elementin fonttikokoon, jos parent element font-size = 16px ja laitetaan headeriin font-size: 3em => headerin font-size = 48px.
@@ -52,7 +53,10 @@ periytyviä ominaisuuksia :
 
 Box-sizing: border-box; -> Kun määrittelee widthin ja heightin elementille -> Korkeuteen ja pituuteen tulee mukaan padding ja border.
 
-Z-index toimii vain, jos position on asetettu
+Z-index toimii vain, jos position on asetettu.
+
+Imagen tulisi olla käytännössä aina display: block; tai display: inline-block;
+	-> Muuten kuvan alareunaan jää pieni white-space
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -75,6 +79,8 @@ Container -> Ensimmäiset vaihtoehdot oletuksena {
 		- Jos rivejä on monta, määrittää miten rivit sijoitetaan läpiakselin (cross axis) suhteen
 
 }
+
+margin-right | margin-left: auto -> Todella hyvä kikka, jos halutaan esim. kaksi elementtiä flex rown toiseen päähän ja kaksi toiseen päähän.
 
 Item -> Ensimmäiset vaihtoehdot oletuksena {
 

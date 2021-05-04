@@ -187,3 +187,263 @@
     text-align: center;
     padding: 2.5rem;
 }
+
+
+////////////////////////////////////////////////////
+// GALLERY
+.gallery {
+    display: flex;
+
+    &__photo {
+        width: 100%;
+        display: block;
+    }
+}
+
+////////////////////////////////////////////////////
+// HOTEL OVERVIEW
+.overview {
+    display: flex;
+    align-items: center;
+    border-bottom: var(--line);
+
+    &__header {
+        font-size: 2.25rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1.5rem 3rem;
+    }
+
+    &__stars {
+        margin-right: auto;
+        display: flex;
+        //font-size: 0;
+    }
+
+    &__icon-star,
+    &__icon-location {
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-primary);
+    }
+
+    &__location {
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon-location {
+        margin-right: .5rem;
+    }
+
+    &__rating {
+        margin-left: 3rem;
+        color: #fff;
+        background-color: var(--color-primary);
+        padding: 0 2.25rem;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__rating-average {
+        font-size: 2.25rem;
+        font-weight: 300;
+        margin-bottom: -.3rem;
+    }
+
+    &__rating-count {
+        font-size: .8rem;
+        text-transform: uppercase;
+    }
+}
+
+////////////////////////////////////////////////////
+// BUTTON INLINE
+.btn-inline {
+    border: none;
+    color: var(--color-primary);
+    font-size: inherit;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .2s;
+    font-weight: 600;
+
+    & span {
+        margin-left: .3rem;
+        transition: margin-left .2s;
+    }
+
+    &:hover {
+        color: var(--color-grey-dark-1);
+
+        span {
+            margin-left: .8rem;
+        }
+    }
+
+    &:focus {
+        outline: none;
+        animation: pulsate 1s infinite;
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 1rem 4rem rgba(0,0,0,.25);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+}
+
+////////////////////////////////////////////////////
+// PARAGRAPH
+.paragraph {
+    font-weight: 600;
+
+    &:not(:last-of-type) {
+        margin-bottom: 2rem;
+    }
+}
+
+////////////////////////////////////////////////////
+// LIST
+.list {
+    list-style: none;
+    margin: 3rem 0;
+    padding: 3rem 0;
+    border-top: var(--line);
+    border-bottom: var(--line);
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        font-weight: 700;
+        flex: 0 0 50%;
+        margin-bottom: .7rem;
+    }
+
+    &__item::before {
+        content: "";
+        display: inline-block;
+        height: 1rem;
+        width: 1rem;
+        margin-right: .7rem;
+
+        // Older browsers
+        //background-image: url(../img/chevron-thin-right.svg);
+        //background-size: cover;
+
+        //Newer browser - masks
+        background-color: var(--color-primary);
+        -webkit-mask-image: url(../img/chevron-thin-right.svg);
+        -webkit-mask-size: cover;
+    }
+}
+
+////////////////////////////////////////////////////
+// RECOMMEND
+.recommend {
+    font-size: 1.3rem;
+    color: var(--color-grey-dark-3);
+    display: flex;
+    align-items: center;
+
+    &__count {
+        margin-right: auto;
+    }
+
+    &__photo {
+        box-sizing: content-box;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        border: 3px solid #fff;
+
+        &:not(:last-child) {
+            margin-right: -1.5rem;
+        }
+    }
+}
+
+////////////////////////////////////////////////////
+// REVIEWS
+.review {
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    margin-bottom: 3.5rem;
+    position: relative;
+    overflow: hidden;
+
+    &__user {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        font-weight: 600;
+        margin-bottom: 2rem;
+        z-index: 10;
+        position: relative;
+
+    }
+
+    &__photo {
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+        margin-right: 1.3rem;
+    }
+
+    &__user-box {
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+    }
+
+    &__user-name {
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: .4rem;
+    }
+
+    &__user-date {
+        font-size: 1.1rem;
+        color: var(--color-grey-dark-3);
+    }
+
+    &__rating {
+        color: var(--color-primary);
+        font-size: 2.3rem;
+        font-weight: 300;
+    }
+
+    &::before {
+        content: "\201C";
+        position: absolute;
+        top: -2.75rem;
+        left: -1rem;
+        font-size: 20rem;
+        color: var(--color-grey-light-2);
+        font-family: sans-serif;
+        line-height: 1;
+        z-index: 1;
+    }
+}
