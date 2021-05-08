@@ -1,9 +1,15 @@
-Video jossa kesken : 
-	- 
+Challenges after second project {
+	-> Display some kind of user menu when hovering over the username in .user-nav
+	-> Display a message menu when hovering over the chat icon in .user-nav (maybe like facebook)
+	-> Display a box with search suggestions as soon as the user starts typing in the search field
+	-> Create a caption for the .gallery__item with a nice hover effect
+	-> Make the page 100% responsive even for viewport sizes below 500px, maybe even responsive images
+}
 
 Linkit codepen-harjoitteluihin:
-	- https://codepen.io/LassiViitakoski/pen/vYgQmBj
-	- https://codepen.io/LassiViitakoski/pen/MWJNKmK
+	- Basics of sass: https://codepen.io/LassiViitakoski/pen/vYgQmBj
+	- Basics of flexbox: https://codepen.io/LassiViitakoski/pen/MWJNKmK
+	- Basics of Grid: https://codepen.io/LassiViitakoski/pen/MWpYBqQ
 
 Komento live-serverin käynnistämiseen:
 	- live-server ./public/exercise1
@@ -60,7 +66,7 @@ Imagen tulisi olla käytännössä aina display: block; tai display: inline-bloc
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Flexbox
+Flexbox-notes
 
 Container -> Ensimmäiset vaihtoehdot oletuksena {
 
@@ -101,3 +107,64 @@ Item -> Ensimmäiset vaihtoehdot oletuksena {
 
 }
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Grid-notes
+
+Grid-item -> Grid-cell
+Grid-space -> Grid-area
+
+Jokainen vaakarivi itemeitä -> Grid track/row
+Jokainen pystyrivi itemeitä -> Grid track/column
+
+Container -> Ensimmäiset vaihtoehdot oletuksena {
+
+	1 -> {
+		grid-template-rows -------------------------------------> |
+															      |
+		grid-template-columns ----------------------------------> | -->---------> grid-template
+																  |
+		grid-template-areas ------------------------------------> |
+	}
+	
+	2 -> {
+		grid-row-gap -------------------------------------> |
+															| -->---------> grid-gap
+		grid-column-gap ----------------------------------> | 
+	}
+
+	3 -> {
+		justify-items: stretch | center | end | start
+		align-items: stretch | center | end | start
+		justify-content: start | center | end | space-between | space-around | space-evenly
+		align-content: start | center | end | space-between | space-around | space-evenly
+	}
+
+	4 -> {
+		grid-auto-rows
+		grid-auto-columns
+		grid-auto-flow: row | column | row dense | column dense -> jos gridiin on jäämässä tyhjiä aukkoja, dense täyttää ne
+	}
+}
+
+Item -> {
+
+	1 -> {
+		grid-row-start -------------------------------------> |
+															  | -->---> grid-row -------> |
+		grid-row-end ---------------------------------------> | 						  |
+																  						  | --->------> grid-area
+		grid-column-start ----------------------------------> |						  	  |
+													    	  | -->---> grid-column ----> |
+		grid-column-end ------------------------------------> |											
+	}
+
+	2 -> {
+		justify-self
+		align-self
+	}
+
+	3 {
+		order
+	}
+}
