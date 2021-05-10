@@ -64,6 +64,10 @@ Z-index toimii vain, jos position on asetettu.
 Imagen tulisi olla käytännössä aina display: block; tai display: inline-block;
 	-> Muuten kuvan alareunaan jää pieni white-space
 
+Imagen asettaminen tiettyyn tilaan muuttamatta aspect ratiota
+	-> aseta imagelle width: 100%, height: 100%, display: block, object-fit: cover
+	-> menee isäntäelementin kokoiseksi.
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Flexbox-notes

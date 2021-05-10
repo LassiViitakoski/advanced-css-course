@@ -14,6 +14,9 @@ $color-grey-dark-2: #6D5D4B;
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 
+$bp-large: 105.625em;
+$bp-largest: 123.0625em;    // 1969px
+
 *,
 *::before,
 *::after {
@@ -44,9 +47,4 @@ body {
         [center-end] minmax(6rem, 1fr)
         [full-end]
     ;
-
-    & > * {
-        padding: 40px;
-        font-size: 3rem;
-    }
 }
