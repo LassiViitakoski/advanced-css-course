@@ -2,6 +2,10 @@
     background-color: $color-secondary;
     grid-column: full-start / full-end;
     padding: 8rem 12rem;
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 6rem;
+    }
 }
 
 .nav {
@@ -16,7 +20,9 @@
     &__item {
 
         &--5 {
-            @media only screen and (min-width: 88.0625em) and (max-width: 105.620em) {
+            @media only screen 
+            and (min-width: 88.0625em) 
+            and (max-width: 105.620em) {
                 grid-column: 2 / span 1;
                 grid-row: 2 / span 1;
             }
