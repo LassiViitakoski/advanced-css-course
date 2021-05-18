@@ -1,1 +1,1 @@
-# advanced-css-course
+# Repository projects from Jonas schmedtmann's Advanced-css course
